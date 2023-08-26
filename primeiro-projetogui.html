@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!--<tag>-->
+<html lang="pt-br">
+<head> <!-- cabeçalho-->
+    <meta charset="UTF-8"> <!--atualização-->
+    <title>Primeiro Projeto</title>  <!-- (id -) 1 elemento #... (class -) conj.especifico de elemento (tag -) formata todos os items da tag no doc-->
+    <style>
+        h1:hover{
+            color: rgb(255,255,0) /* comentario em hexadecimal: #ffff00; */
+        }
+        h1,h2{ text-align: center; }
+        #dados-pessoais,#foto{
+            float: left; /*alinha os itens por flutuação á esquerda */
+        }
+        #dados-pessoais { width: 70% ;}
+        #dados-pessoais a{
+            text-decoration: none;
+        }
+        #foto { width: 30%; 
+                text-align: right;
+            }
+        hr{ clear: both; /*limpar qualquer flutuação anterior dir/esq */}
+        #p-habilidades{
+            text-align: center;
+            color:rgb(0, 0, 255);
+            background-color: rgb(255,255,0);
+            padding: 10px 1%;  /*padding - top,bottom,left,right */
+            margin-top: 20px;
+            /* padding-top: 20px; */
+            /* border: (borda) 1px solid #000; */
+            /*
+            /* padding: 20px 1%; =>20px top bottom e 1% left right */
+        } 
+        .titulo-formacao{
+            text-decoration: underline;
+        }
+        #lista-info{
+            list-style: decimal;
+        }
+    </style>
+</head>
+<body> <!-- Corpo --> <!--tabela de cores html nome hexadecimal e RGB -->
+    <h1>Portfólio de Guilherme Ferreira Guimarães</h1> 
+    <hr> <!-- cria uma linha -->
+    <h2>Dados Pessoais</h2>
+    <div id="dados-pessoais">
+    <p><b>E-mail:</b>guilherme.guimaraes6@fatec.sp.gov.br</p>
+    <p><b>Telefone:</b>(13)997760408</p>
+    <p><b>Endereço:</b>Rua Octacilio Furlan,1041 - Morada do Sol - Indaiatuba/SP CEP 13348-520</p>
+    <p><b>LinkdIn:</b><a href="https://br.linkedin.com/" target="_blank"> https://br.linkedin.com/</a>
+    </div>
+    <div id="foto">
+        <img src="fotoperfil.jpg" alt="foto de perfil de Guilherme Ferreira Guimarães, olhos escuros, cabelo longo
+        de altura media com celular na mão e esta em preto e branco." title="foto de perfil de Gui">
+    </div>
+    <hr>
+    <h2>Habilidades</h2>
+    <p id="p-habilidades">Experiencia em hoteis, restaurantes e vendas</p>
+    <hr>
+    <h2>Formação Acadêmica</h2>
+    <h3 class="titulo-formacao">Curso de informática de Hardware e Software </h3>
+    <p>City Computer - 2010</p>
+    <h3 class="titulo-formacao">Superior em Curso em Redes de Computadores</h3>
+    <p>Fatec - Indaiatuba</p>
+    <hr>
+    <h2>Experiências Profissionais</h2>
+    <h3>Restaurente DBOA</h3>
+    <p>Santos , São Paulo</p>
+    <h3>Prevenção de perdas e acidentes</h3>
+    <p>Indaiatuba, São Paulo</p>
+    <hr>
+    <h2>Informações Complementares</h2>
+    <p>
+        <!-- Criando uma lista não ordenada (comentario em html)-->
+        <ul id="lista-info">
+            <li>Tem disponibilidade para viagens</li>
+            <li>Pontualidade e Responsabilidade</li>
+        </ul>
+    </p>
+</body>    
+</html>
